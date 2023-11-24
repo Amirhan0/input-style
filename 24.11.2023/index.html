@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Формы HTML CSS</title>
+</head>
+
+<body>
+    <h1>Формы взаимодействия</h1>
+    <h2>Чем важен тег form:</h2>
+
+    1) Переход без отправки:
+    <a href="2.html">
+        <button name="Click">Нажми</button>
+
+    </a><br><br>
+
+    2) Переход с отправкой:
+    <form action="2.html" method="get">
+        <button name="Click">Нажми</button>
+    </form> <br><br>
+
+    <h2>Виды тегов input</h2>
+    3 Текст <input type="text">
+    <br><br>
+    4 Номер <input type="number">
+    <br><br>
+    5 Пароль <input type="password">
+    <br><br>
+    6 Файл <input type="file">
+    <br><br>
+    7 Изображение <input type="image" src="Cat03.jpg" width="200px">
+
+    <h2>Кнопки видов инпут</h2>
+
+    8 Сбросить <form>
+        <input type="text"><input type="reset" value="сбросить">
+
+    </form>
+    <br>
+    9 Отправка <form action="2.html" method="get">
+        <input type="text" name="text">
+        <input type="submit" name="text" value="Отправить">
+    </form>
+    <br><br>
+    10 Чек-боксы:
+    <br><input type="checkbox" id="ban"><label for="ban">Банан</label>
+    <br><input type="checkbox" id="ap"><label for="ap">Апельсин</label>
+    <br><input type="checkbox" id="yam"><label for="yam">Яблоко</label>
+    <br><br>
+
+    11 Радио-боксы:
+    <br><input type="radio" name="male" id="men"><label for="men">Мужской</label>
+    <br><input type="radio" name="male" id="wom"><label for="wom">Женский</label>
+
+    12 Выбор цвета:
+    <input type="color">
+    <br><br>
+
+    13 Выбор даты:
+    <input type="date">
+    <br><br>
+    14 Выбор месяца:
+    <input type="month">
+    <br><br>
+    15 Выбор времени:
+    <input type="time">
+    <br><br>
+    16 Выбор недели:
+    <input type="week">
+    <br><br>
+    17 Числа в указанном диапазоне:
+    <input type="range" id="sall" min="0" max="100" value="0">
+    <br><br>
+    18 <h1>Ключевые теги Input</h1>
+    1) Надпись подсказка: <input type="text" placeholder="Впишите текст">
+    <br><br>
+    2) Блокировка ввода: <input type="button" disabled value="Click">
+    <br><br>
+    3) Только чтение: <input type="text" readonly value="Лошара">
+    <br><br>
+    4) Шаг изменение числа:
+    <br><input type="number" step="100">
+    <br><input type="range" step="20" min="0" max="100">
+
+    <h2>Прочие элементы форм:</h2>
+    1) Кнопка: <button name="Click">go</button>
+    <br><br>
+    2) Раскрывающий пункт:
+    <select>
+        <option value="">Пункт 1</option>
+        <option value="">Пункт 2</option>
+        <option value="">Пункт 3</option>
+        <option value="">Пункт 4</option>
+        <option value="">Пункт 5</option>
+    </select>
+    <br><br>
+    3) Поле текста:
+    <textarea style="resize:none" width="500px" height="500px" placeholder="Напишите отзыв">
+    </textarea>
+    <br><br>
+    4) Группировка форм
+    <fieldset style="width: 400px;">
+    <legend>взаимодействия</legend>
+        <br>
+        8) Очистка:
+        <form><input type="text">
+        <input type="reset" value="reset"></form>
+       <br> <form action="2.html" method="get">
+            <input type="text" name="test">
+            <input type="submit" value="submit">
+        </form>
+</fieldset>
+</body>
+
+</html>
